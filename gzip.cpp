@@ -8,7 +8,7 @@
  @param src_length : source buffer length
  @return Z_OK on success, zlib error (<0) on failure
  */
-int gzip(unsigned char *dst, unsigned long *dst_length, unsigned char *src, unsigned long src_length)
+extern "C" int gzip(unsigned char *dst, unsigned long *dst_length, unsigned char *src, unsigned long src_length)
 {
     z_stream        stream;
     memset(&stream, 0, sizeof(stream));
